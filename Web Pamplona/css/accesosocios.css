@@ -1,0 +1,32 @@
+.formulario{
+    border:black 1px solid;
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-bottom: 10px;
+    padding: 40px;
+    background-color: azure;
+    width:max-content  ;
+}
+
+.content{
+    height: 480px;
+}
+
+.tcontent {
+    margin-top: 10px;
+}
+
+table{
+    border-collapse: collapse;
+    margin:auto;
+    margin-left: 10%;
+}
+
+td{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 10%;
+    font-size: small;
+}
