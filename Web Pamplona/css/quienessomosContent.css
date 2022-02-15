@@ -1,0 +1,27 @@
+/* INI CONTENT */
+.content {
+    overflow: auto;
+    background-color: aliceblue;
+    width: 70%;
+    margin: auto ;
+    /*height: 560px;  Should be removed. Only for demonstration */
+}
+
+.content h1, h2{
+    margin: 5px;
+    text-align: center ;
+}
+
+.content p{
+    margin: 10px;
+    margin-left : 45px;
+    margin-right: 45px;
+    float: left;
+    color: brown;
+}
+/* FIN CONTENT */
+
+hr {
+    width: 70%;
+    border-top: 1px solid darkblue;
+}

@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 900px;
+    margin: auto;
+    padding: 5px;
+}
+
+/* INI HEADER NAV */
+
+.header {
+    background-color: #f1f1f1;
+    padding: 30px;
+    height: 200px;
+    background-image: url("../recursos/ciudad.jpg") ;
+}
+
+.activebar{
+    background-color: #70bbff;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #8cc8ff;
+    width: 70%;
+    margin: auto;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #70bbff;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    background-color:#8cc8ff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #70bbff;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* FIN HEADER NAV */
+.content {
+    overflow: auto;
+    background-color: aliceblue;
+    width: 70%;
+    margin: auto ;
+    /*height: 560px;  Should be removed. Only for demonstration */
+}
+
+
+.footer {
+    padding: 1px;
+    background-color: darkgray;
+    text-align: center  ;
+    font-size: 10px;
+    height: 60px;
+    width: 70%;
+    margin: auto;
+}
