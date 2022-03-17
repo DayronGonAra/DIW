@@ -1,0 +1,69 @@
+.content {
+    background-color: white;
+}
+
+.item{
+    background-color: aliceblue;
+    width: 90%;
+    height: 200px;
+    margin: auto ;
+}
+
+hr {
+    width: 70%;
+    border-top: darkblue double 1.5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.itemimg{
+    float: left;
+    width: 19%;
+    height: inherit;
+    border-right: 1px black solid;
+}
+
+.itemdate{
+    float: left;
+    height: 100%;
+    width: 80%;
+}
+
+.itemhead {
+    float: left;
+    width: 100%;
+    height: 20%;
+    border-bottom: 1px black solid;
+}
+.itembody  {
+    float: left;
+    width: 100%;
+    height: 80%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.titulo {
+    float:left;
+    padding-left: 10px;
+    padding-top: 20px;
+    font-size: larger;
+}
+
+.fecha{
+    float:right;
+    padding-right: 10px;
+    padding-top: 20px;
+    font-size: small;
+    color:#cccccc;
+}
+
+.noticia{
+    float:left;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
