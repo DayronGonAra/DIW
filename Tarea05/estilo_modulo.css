@@ -1,0 +1,61 @@
+
+hr{
+    height: 2px;
+    background-color: red;
+    border: none;
+}
+
+main{
+    /* border: solid 1px black;  */
+    height: auto;
+    padding: 15px 45px;
+}
+
+main div img{
+    width: 80px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.container{
+    /* border: solid 1px black;  */
+    height: fit-content;
+    font-size: 12px;    
+}
+
+.imgMain{
+    width: 100%;
+    height: auto;     
+}
+
+.img-responsive {
+    width: 100%;    
+    height: auto;
+  }
+
+.autor{
+    width: 100%;
+    height: auto;
+    display: flex; 
+    flex-direction: row;
+    background-color: wheat;
+    border-bottom: 2px solid red;
+}
+
+.iframe{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */    
+}
+
+.iframe-responsive {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
