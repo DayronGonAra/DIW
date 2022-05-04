@@ -1,0 +1,42 @@
+
+main{
+    /* border: solid 1px black;  */
+    height: auto;
+    padding: 15px 45px;
+}
+
+main div img{
+    height: 180px;
+    width: 200px;
+}
+
+.imgl{
+    /* border: solid 1px black;  */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.container{
+    /* border: solid 1px black;  */
+    height: fit-content;
+    font-size: 12px;    
+}
+.imgMain{
+    width: 100%;
+    height: auto;     
+}
+
+.img-responsive {
+    width: 100%;    
+    height: auto;
+  }
+
+
+
+figcaption{
+    text-align: center;
+}
+

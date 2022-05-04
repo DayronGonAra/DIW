@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inscripción a las X Jornadas Front End</title>
+    <link rel="stylesheet" type="text/css" href="tarea8.css">
+</head>
+
+<body>
+    <form id="form" action="script.php" method="post">
+        <h1>Inscripción a las X Jornadas Front End</h1>
+        <p>Los campos señalados con <abbr title = "required">*</abbr> son obligatorios</p>
+
+        <fieldset>
+            <legend><b>Datos personales</b></legend>
+            <ul>
+                <li>
+                    <p><label for="nombre"><span>Nombre</span>
+                        <strong><abbr title="required">*</abbr></strong></label></p>                            
+                    <input type="text" name="nombre" id="nombre" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,64}" 
+                    title="Solo caracteres alfabéticos. Un mínimo de 2 y un máximo de 64 caracteres" required/>        
+                </li>
+                <li>
+                    <p><label for="correo"><span>Correo electrónico</span>
+                        <strong><abbr title="required">*</abbr></strong></label></p>                            
+                    <input type="email" name="correo" id="correo" placeholder="usuario@ejemplo.com" 
+                        title="Formato de correo electrónico: 'usuario@ejemplo.com'" required/>    
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <p><label for="apellidos"><span>Apellidos</span>
+                        <strong><abbr title="required">*</abbr></strong></label></p>                            
+                    <input type="text" name="apellidos" id="apellidos" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,64}" 
+                    title="Solo caracteres alfabéticos. Un mínimo de 2 y un máximo de 64 caracteres" required/>    
+                </li>
+                <li>
+                    <p><label for="telefono"><span>Teléfono</span>
+                        <strong><abbr title="required">*</abbr></strong></label></p>                                                  
+                    <input type="tel" name="telefono" id="telefono" placeholder="123 345 678" pattern="[0-9]{3} [0-9]{3} [0-9]{3}" 
+                        title="Solo caracteres númericos. Ejemplo: 123 456 789" required/>                    
+                </li>
+            </ul>
+            <ul class="ul-2-cols">
+                <li>
+                    <p><label for="foto"><span>Fotografía para la acreditación</span></label></p>                            
+                    <input class="borde-input" type="file" name="foto" title="Agregue una foto para la acreditación." id="foto"/>  
+                </li>
+            </ul>      
+        </fieldset>
+        <fieldset>
+            <legend><b>Perfil de participante</b></legend>
+            <ul>
+                <li>
+                    <p><label for="interes"><span>¿Por qué está interesado en participar?</span>
+                        <strong><abbr title="required">*</abbr></strong></label></p>                            
+                    <textarea id="interes" name="interes" rows="10" cols="65" placeholder="Comentario..." 
+                    title="Deja aquí tu comentario sobre tu interes por participar." required></textarea>
+                </li>
+                <li>
+                   <p><label for="actividadpro"><span>Actividad profesional</span>
+                        <strong><abbr title="required">*</abbr></strong></label></p>                         
+                    <select id="actividadpro" title="Selecciona una opción del desplegable." required>
+                        <option value="" disabled selected>Selecciona una opción</option>              
+                        <option value="ebach">Estudiante de bachillerato</option>
+                        <option value="euni">Estudiante universitario</option>
+                        <option value="pbach">Profesor de bachillerato</option>
+                        <option value="puni">Profesor universitario</option>
+                        <option value="otra">Otra actividad profesional</option>
+                    </select>
+                </li>
+                <li>
+                    <p><label for="talleres"><span>¿En qué talleres está interesado?</span>
+                        <strong><abbr title="required">*</abbr></strong></label></p>
+                    <p class="letra-pequeña">Para seleccionar más de una opción, mantened pulsada la tecla Control (Window) / Command (Mac) 
+                        mientras hacéis clic a las opciones</p>        
+                    <select id="talleres" name="talleres" size="7" multiple="multiple" title="Selecciona una o mas opciones de la lista." required>                                                          
+                        <option value="001">La encriptación a lo largo de la historia</option>
+                        <option value="002">Seguridad informática</option>
+                        <option value="003">Redes sociales y teoría de grafos</option>
+                        <option value="004">Matemáticas y azar</option>
+                        <option value="005">Problemas matemáticos del milenio</option>
+                        <option value="006">La predicción del tiempo</option>
+                        <option value="007">Fractales en el aula</option>                                       
+                    </select>
+                </li>
+                <li>
+                    <p><label for="dias_1"><span>Seleccione una de las tres opciones siguientes: </span>
+                        <strong><abbr title="required">*</abbr></strong></label></p>                    
+                    <p><label for="dias_1">
+                        <input class="input-pequeño" type="radio" id="dias_1" name="dias" value="d1">
+                        Asistiré los días 4 y 5 de mayo
+                    </label></p>
+                    <p><label for="dias_2">
+                        <input class="input-pequeño" type="radio" id="dias_2" name="dias" value="d2">
+                        Asistiré solo el día 4 de mayo
+                    </label></p>
+                    <p><label for="dias_3">
+                        <input class="input-pequeño" type="radio" id="dias_3" name="dias" value="d3">
+                        Asistiré solo el día 5 de mayo
+                    </label></p>                    
+                </li>
+            </ul>
+        </fieldset>
+        <p>
+            <input class="input-pequeño" type="checkbox" id="pol-legal" name="pol-legal" value="leido" required>
+            <label for="pol-legal">He leído y acepto la política de privacidad y el aviso legal
+                <strong><abbr title="required">*</abbr></strong></label><br>
+        </p>
+        <p><button type="submit">ENVIAR</button></p>
+    </form>
+</body>
+</html>
+

@@ -1,0 +1,155 @@
+body{
+/* border: solid 1px black;  */
+width: 90%;
+ /* height: 900px;  */
+margin:auto;
+display: flex;
+flex-direction: column;  
+font-family: Verdana, Tahoma, sans-serif;
+}
+
+header{    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+header h2{    
+    font-size: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header img{    
+    width: 100px;
+    height: 100px;    
+}
+
+.idioma{      
+      list-style: none;
+      display: flex;     
+}
+
+.idioma a{
+    /* display: block; */
+    padding: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    color:black;
+}
+
+.navBar{    
+    list-style: none;
+    margin: auto;    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.navBar a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color:black;
+}
+
+.navBar a:hover{    
+    color: darkcyan;
+    border-bottom: 1px solid darkcyan;
+}
+
+/* Pantalla medianas */
+@media all and (max-width: 700px) {
+    header{
+        justify-content: center;
+    }
+    
+    .navBar {
+        justify-content: space-around;
+    }
+
+    
+  }
+
+/* Pantalla pequeña  */
+@media all and (max-width: 500px) {
+    .navFooter{
+        flex-flow: column wrap;
+        padding: 0;      
+    }
+
+    .navBar {
+      flex-flow: column wrap;
+      padding: 0;
+    }
+    .navBar a {
+      text-align: center;
+      padding: 10px;
+      border-top: 1px solid rgba(255, 255, 255,0.3);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .navBar li:last-of-type a {
+      border-bottom: none;
+    }
+}
+
+
+footer{    
+    background-color: darkgray;
+    color:black;    
+    display: flex;
+    flex-direction: column;        
+}
+
+footer ul {
+    list-style: none;
+    display: flex;     
+    margin: auto;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+footer img {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    padding: 5px 20px;
+}
+
+footer p{
+  font-size: 12px;
+  margin: auto;
+  padding-bottom: 10px;
+} 
+
+footer h2{
+    margin: auto;
+    padding:10px 30px;    
+}
+
+footer p a {
+    font-size: 9px;
+    text-decoration: none;    
+    color:black;
+}
+.navFooter{
+    list-style: none;
+    margin: auto;    
+    display: flex;
+    flex-flow: row wrap;    
+
+}
+
+.navFooter a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;    
+    color:black;
+    font-size: 12px;
+}
+
+.navFooter a:hover{    
+    color: white;    
+}
